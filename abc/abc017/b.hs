@@ -2,13 +2,14 @@ import Control.Applicative
 
 isChoku :: String -> Bool
 isChoku [] = True
-isChoku (x:xs)
-    | (x == 'o' || x == 'k' || x == 'u') = isChoku xs
-    | (x == 'h' && (head xs) == 'c') = isChoku $ tail xs
+isChoku ('c':'h':xs) = isChoku xs
+isChoku ('o':xs) = isChoku xs
+isChoku ('k':xs) = isChoku xs
+isChoku ('u':xs) = isChoku xs
 isChoku _ = False
 
-showYesNo :: Bool -> String
-showYesNo b = if b then "YES" else "NO"
-
 main :: IO ()
-main = getLine >>= putStrLn . showYesNo . isChoku
+main = do
+  xs <- getLine
+  putStrLn $ if isChoku xs then "YES" else "NO"
+  return ()
