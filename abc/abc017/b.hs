@@ -11,5 +11,4 @@ showYesNo :: Bool -> String
 showYesNo b = if b then "YES" else "NO"
 
 main :: IO ()
-main = do
-    main = getLine >>= putStrLn . showYesNo . isChoku
+main = getLine >>= putStrLn . showYesNo . isChoku
