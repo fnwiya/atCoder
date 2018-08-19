@@ -20,7 +20,7 @@ fn main() {
     a.reverse();
     let mut alice = 0;
     let mut bob = 0;
-    for(i, &v) in a.iter().enumerate() {
+    for (i, &v) in a.iter().enumerate() {
         if i % 2 == 0 {
             alice += v;
         } else {
