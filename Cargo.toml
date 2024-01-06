@@ -14,8 +14,12 @@ name = "abc016_c"
 path = "./abc/abc016/c.rs"
 
 [[bin]]
-name = "abc01c_c"
+name = "abc017_c"
 path = "./abc/abc017/c.rs"
+
+[[bin]]
+name = "abc009_c"
+path = "./abc/abc009/c.rs"
 
 [dependencies]
 proconio = { version = "=0.4.5", features = ["derive"] }
