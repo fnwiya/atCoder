@@ -6,6 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
+name = "abc009_c"
+path = "./abc/abc009/c.rs"
+
+[[bin]]
 name = "abc015_c"
 path = "./abc/abc015/c.rs"
 
@@ -18,8 +22,16 @@ name = "abc017_c"
 path = "./abc/abc017/c.rs"
 
 [[bin]]
-name = "abc009_c"
-path = "./abc/abc009/c.rs"
+name = "abc018_a"
+path = "./abc/abc018/a.rs"
+
+[[bin]]
+name = "abc018_b"
+path = "./abc/abc018/b.rs"
+
+[[bin]]
+name = "abc018_c"
+path = "./abc/abc018/c.rs"
 
 [dependencies]
 proconio = { version = "=0.4.5", features = ["derive"] }
